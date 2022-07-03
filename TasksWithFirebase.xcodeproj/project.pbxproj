@@ -12,6 +12,14 @@
 		E2A6C7AA2870CD1D00E30A2C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7A92870CD1D00E30A2C /* StartViewController.swift */; };
 		E2A6C7AF2870CD1E00E30A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A6C7AE2870CD1E00E30A2C /* Assets.xcassets */; };
 		E2A6C7B22870CD1E00E30A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6C7B02870CD1E00E30A2C /* LaunchScreen.storyboard */; };
+		E2A6C7BE2870CFEA00E30A2C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7BD2870CFEA00E30A2C /* UILabel.swift */; };
+		E2A6C7C02870D36200E30A2C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A6C7BF2870D36200E30A2C /* Montserrat-Bold.ttf */; };
+		E2A6C7C22870D36D00E30A2C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2A6C7C12870D36D00E30A2C /* Montserrat-Regular.ttf */; };
+		E2A6C7C52870D43100E30A2C /* FontSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7C42870D43100E30A2C /* FontSetup.swift */; };
+		E2A6C7C92870D6E200E30A2C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7C82870D6E200E30A2C /* UIColor.swift */; };
+		E2A6C7CC2870D81100E30A2C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7CB2870D81100E30A2C /* CustomTextField.swift */; };
+		E2A6C7CE2870DA4500E30A2C /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7CD2870DA4500E30A2C /* UIStackView.swift */; };
+		E2A6C7D1287219B300E30A2C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6C7D0287219B300E30A2C /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		E2A6C7AE2870CD1E00E30A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A6C7B12870CD1E00E30A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A6C7B32870CD1E00E30A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A6C7BD2870CFEA00E30A2C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		E2A6C7BF2870D36200E30A2C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E2A6C7C12870D36D00E30A2C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		E2A6C7C42870D43100E30A2C /* FontSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSetup.swift; sourceTree = "<group>"; };
+		E2A6C7C82870D6E200E30A2C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E2A6C7CB2870D81100E30A2C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E2A6C7CD2870DA4500E30A2C /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		E2A6C7D0287219B300E30A2C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			children = (
 				E2A6C7B92870CD8E00E30A2C /* Application */,
 				E2A6C7BA2870CD9800E30A2C /* Controllers */,
+				E2A6C7BC2870CFD400E30A2C /* Extension */,
 				E2A6C7BB2870CEED00E30A2C /* Resources */,
 			);
 			path = TasksWithFirebase;
@@ -81,11 +98,50 @@
 		E2A6C7BB2870CEED00E30A2C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2A6C7C32870D41500E30A2C /* Fonts */,
 				E2A6C7AE2870CD1E00E30A2C /* Assets.xcassets */,
 				E2A6C7B02870CD1E00E30A2C /* LaunchScreen.storyboard */,
 				E2A6C7B32870CD1E00E30A2C /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2A6C7BC2870CFD400E30A2C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C7C62870D6CF00E30A2C /* UIKit */,
+				E2A6C7C42870D43100E30A2C /* FontSetup.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E2A6C7C32870D41500E30A2C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C7BF2870D36200E30A2C /* Montserrat-Bold.ttf */,
+				E2A6C7C12870D36D00E30A2C /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2A6C7C62870D6CF00E30A2C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C7CA2870D7EE00E30A2C /* Custom */,
+				E2A6C7BD2870CFEA00E30A2C /* UILabel.swift */,
+				E2A6C7C82870D6E200E30A2C /* UIColor.swift */,
+				E2A6C7CD2870DA4500E30A2C /* UIStackView.swift */,
+				E2A6C7D0287219B300E30A2C /* UIButton.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E2A6C7CA2870D7EE00E30A2C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E2A6C7CB2870D81100E30A2C /* CustomTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A6C7C22870D36D00E30A2C /* Montserrat-Regular.ttf in Resources */,
 				E2A6C7B22870CD1E00E30A2C /* LaunchScreen.storyboard in Resources */,
 				E2A6C7AF2870CD1E00E30A2C /* Assets.xcassets in Resources */,
+				E2A6C7C02870D36200E30A2C /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A6C7CC2870D81100E30A2C /* CustomTextField.swift in Sources */,
+				E2A6C7BE2870CFEA00E30A2C /* UILabel.swift in Sources */,
+				E2A6C7C92870D6E200E30A2C /* UIColor.swift in Sources */,
+				E2A6C7CE2870DA4500E30A2C /* UIStackView.swift in Sources */,
 				E2A6C7AA2870CD1D00E30A2C /* StartViewController.swift in Sources */,
+				E2A6C7C52870D43100E30A2C /* FontSetup.swift in Sources */,
 				E2A6C7A62870CD1D00E30A2C /* AppDelegate.swift in Sources */,
 				E2A6C7A82870CD1D00E30A2C /* SceneDelegate.swift in Sources */,
+				E2A6C7D1287219B300E30A2C /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F5FNT6V2V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasksWithFirebase/Info.plist;
+				INFOPLIST_FILE = TasksWithFirebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -329,7 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F5FNT6V2V7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasksWithFirebase/Info.plist;
+				INFOPLIST_FILE = TasksWithFirebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
