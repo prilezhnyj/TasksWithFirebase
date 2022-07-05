@@ -37,11 +37,23 @@ extension StartViewController {
     }
     
     @objc private func loginButtonAction() {
-        print(#function)
+        if let login = loginTextField.text, let password = passwordTextField.text {
+            FirebaseServices.shared.signIn(email: login, password: password)
+        } else {
+            print("Ошибка входа")
+        }
     }
     
     @objc private func signButtonAction() {
-        print(#function)
+        if let login = loginTextField.text, let password = passwordTextField.text {
+            FirebaseServices.shared.createUser(email: login, password: password)
+//            let vc = TasksViewController()
+//            vc.modalTransitionStyle = .flipHorizontal
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+        } else {
+            print("ошибка регистрации")
+        }
     }
 }
 
